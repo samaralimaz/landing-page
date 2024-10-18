@@ -7,6 +7,7 @@
 }
 
 body {
+  margin-top: 70px;
   font-family: "Playfair Display";
   background: url(/images/background-light.jpg) no-repeat top center/cover;
   height: 100vh;
@@ -16,11 +17,16 @@ nav {
   background-color: #fcf8ff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 1rem;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 
 .title {
   text-align: center;
   margin: 10px;
+  padding: 10px;
 }
 
 .menu-list {
@@ -39,6 +45,33 @@ nav {
   padding: 0 5rem;
 }
 
+.about-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  display: flex;
+  padding: 50px;
+}
+
+.card-about {
+  background-color: #fcf8ff;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.about-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 .projects-container {
   display: flex;
   justify-content: space-around;
@@ -48,7 +81,7 @@ nav {
 
 .card {
   width: 300px;
-  background-color: #fefedf;
+  background-color: #fcf8ff;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
